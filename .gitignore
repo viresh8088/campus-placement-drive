@@ -1,6 +1,14 @@
+
 node_modules/
 dist/
 .qoder/
 *.log
-!**/.env
-!.env
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Ignore uploaded resumes and documents
+/backend/uploads/*
+!/backend/uploads/.gitkeep
